@@ -6,4 +6,6 @@ SimpleSEIM script parses a log file (in this case, the file located at /var/log/
 
 The script defines three functions: parse_log() to extract the IP addresses from the log file, analyze_log_data() to count the occurrences of each IP address, and perform_remediation_action() to block traffic from an IP address using iptables. The script then calls these functions in sequence to perform the desired analysis and remediation.
 
+SimpleSEIM can manage remediation and abides by specific rules set in the code but these rules and remediation actions are modular in that the script is open-source and easily modified to add these actions and rules.
+
 SimpleSEIM is developed by @abtzpro, @AdamR, and Hello Security as an open source building block for a modular yet simplistic SEIM. 
